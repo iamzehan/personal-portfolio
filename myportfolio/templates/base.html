@@ -1,0 +1,120 @@
+{% load static %}
+<html lang="en">
+<!-- Head -->
+<head>
+<title>Md. Ashiqur Rahaman</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Professional CV a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<!-- menu -->
+<link type="text/css" rel="stylesheet" href="{% static 'css/cm-overlay.css' %}" />
+<!-- //menu -->
+<link href="{% static 'css/jquery.fatNav.css' %}" rel="stylesheet" type="text/css">
+
+<!--FlexSlider-->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
+<!--//FlexSlider-->
+
+<link rel="stylesheet" href="{% static 'css/lightbox.css' %}"><!-- For-gallery-CSS -->
+
+<!-- custom css theme files -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" media="all">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+<!-- //custom css theme files -->
+
+<!-- google fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- //google fonts -->
+
+</head>
+<!-- Body -->
+<body>
+{% include 'pages/index.html' %}
+<div class="w3l_footer">
+		<div class="container">
+			<h3>Thanks for visiting my site</h3>
+				<div class="connect-social">
+					<ul>
+						<li class="connect">Connect me with : </li>
+						<li><a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-button linkedin"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			<p class="agileits_w3ls_copyright">© 2020 Md. Ashiqur Rahaman. All rights reserved</p>
+			<div class="arrow-container animated fadeInDown">
+				<a href="#home" class="arrow-2 scroll">
+					<i class="fa fa-angle-up"></i>
+				</a>
+				<div class="arrow-1 animated hinge infinite zoomIn"></div>
+			</div>
+		</div>
+	</div>
+	<!--//footer -->
+
+
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- //Default-JavaScript-File -->
+
+<!-- gauge-meter -->
+	<script src="{% static 'js/jquery.gauge.js' %}"></script>
+	<script>
+		$(document).ready(function (){
+			$("#gauge1").gauge(90,{color: "#ff4f81",unit: " %",type: "halfcircle"});
+			$("#gauge2").gauge(70, {color: "#2dde98", unit: " %",type: "halfcircle"});
+			$("#gauge3").gauge(75, {color: "#00aeff",unit: " %",type: "halfcircle"});
+			$("#gauge4").gauge(40, {color: "#ffb900",unit: " %",type: "halfcircle"});
+		});
+	</script>
+<!-- //gauge-meter -->
+
+<!--menu script-->
+<script type="text/javascript" src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+		<script src="{% static 'js/jquery.fatNav.js' %}"></script>
+		<script>
+		(function() {
+
+			$.fatNav();
+
+		}());
+		</script>
+
+<!--Start-slider-script-->
+	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+		<script type="text/javascript">
+
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	  </script>
+<!--End-slider-script-->
+
+<!-- smooth scrolling -->
+	<script src="{% static 'js/SmoothScroll.min.js' %}"></script>
+<!-- smooth scrolling -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //scrolling script -->
+</body>
+<!-- //Body -->
+</html>
